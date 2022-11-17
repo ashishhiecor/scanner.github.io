@@ -28,6 +28,7 @@
 		$("body").delegate("#qr-reader__camera_selection", "change", function(e){
 			document.getElementById("stopScanning").click();
 			function changeFunc1() {
+				document.getElementById("qr-reader__camera_selection").disabled = false;
 				$('#startScanning').click();
 			}
 			setTimeout(changeFunc1, 200);
