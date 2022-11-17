@@ -25,7 +25,8 @@
 		}
 		beginButton.addEventListener("click", primaryAction, false);
 		
-		$("#qr-reader__camera_selection").on('change',function(){
+		$("#qr-reader__camera_selection").on('change',function(e){
+			alert(e);
 			document.getElementById("stopScanning").click();
 		});
 		
