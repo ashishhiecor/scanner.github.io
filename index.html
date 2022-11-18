@@ -25,6 +25,9 @@
 		}
 		beginButton.addEventListener("click", primaryAction, false);
 		
+		var length = $('#qr-reader__camera_selection > option').length;
+		    alert(length);
+		
 		$("body").delegate("#qr-reader__camera_selection", "change", function(e){
 			document.getElementById("stopScanning").click();
 			$("#qr-reader__camera_selection").prop("disabled", false);
